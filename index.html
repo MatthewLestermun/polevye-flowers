@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Полевые - цветочная мастерская</title>
+<meta name="description" content="Авторские букеты и доставка цветов за 2 часа. Собираем букет под ваш повод и бюджет.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=1">
+</head>
+<body>
+
+<!-- Живой фон: фото медленно «дышит», сверху летят лепестки -->
+<div class="bg" aria-hidden="true">
+  <div class="bg__img"></div>
+  <canvas class="bg__petals" id="petals"></canvas>
+  <div class="bg__shade"></div>
+</div>
+
+<header class="top">
+  <div class="wrap top__in glass">
+    <a class="logo" href="#">Полевые</a>
+    <nav class="nav">
+      <a href="#catalog">Букеты</a>
+      <a href="#how">Как заказать</a>
+      <a href="#reviews">Отзывы</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <a class="btn btn--sm" href="#" data-order="Здравствуйте! Хочу заказать букет">Заказать</a>
+  </div>
+</header>
+
+<main>
+  <section class="hero wrap">
+    <div class="hero__card glass">
+      <p class="eyebrow">цветочная мастерская</p>
+      <h1>Букеты, которые <em>живут</em> дольше недели</h1>
+      <p class="lead">Собираем из свежих цветов под ваш повод и бюджет. Доставка по городу за 2 часа, фото букета перед отправкой.</p>
+      <div class="hero__btns">
+        <a class="btn" href="#catalog">Выбрать букет</a>
+        <a class="btn btn--ghost" href="#" data-order="Здравствуйте! Хочу собрать букет на заказ">Собрать на заказ</a>
+      </div>
+      <ul class="facts">
+        <li><b>2 часа</b><span>доставка</span></li>
+        <li><b>от 1 900 ₽</b><span>букеты</span></li>
+        <li><b>4,9</b><span>рейтинг</span></li>
+      </ul>
+    </div>
+    <div class="hero__side glass">
+      <div class="hero__photo"><img src="img/r6.jpg" alt="Букет дня - пионовидные розы"></div>
+      <div class="hero__deal">
+        <div><span class="badge">Букет дня</span><h3>Пионовидные розы</h3><p>11 роз, упаковка и открытка</p></div>
+        <div class="hero__price"><s>4 200 ₽</s><b>3 500 ₽</b></div>
+      </div>
+      <a class="btn btn--wide" href="#" data-order="Здравствуйте! Хочу букет дня - пионовидные розы за 3 500 ₽">Заказать букет дня</a>
+    </div>
+  </section>
+
+  <section class="section wrap" id="catalog">
+    <div class="head">
+      <h2>Букеты в наличии</h2>
+      <div class="chips" id="chips"></div>
+    </div>
+    <div class="grid" id="grid"></div>
+  </section>
+
+  <section class="section wrap" id="how">
+    <h2>Как заказать</h2>
+    <div class="steps">
+      <div class="step glass"><i>1</i><h3>Выберите букет</h3><p>Из каталога или опишите повод - соберём сами.</p></div>
+      <div class="step glass"><i>2</i><h3>Напишите нам</h3><p>В WhatsApp: адрес, время и текст открытки.</p></div>
+      <div class="step glass"><i>3</i><h3>Получите фото</h3><p>Покажем готовый букет до отправки курьеру.</p></div>
+      <div class="step glass"><i>4</i><h3>Доставка за 2 часа</h3><p>Бесплатно от 4 000 ₽, иначе 300 ₽ по городу.</p></div>
+    </div>
+  </section>
+
+  <section class="section wrap" id="reviews">
+    <h2>Отзывы</h2>
+    <div class="reviews" id="reviews-list"></div>
+  </section>
+
+  <section class="section wrap" id="contacts">
+    <div class="contact glass">
+      <div>
+        <h2>Мы на связи</h2>
+        <p class="lead">Ежедневно 8:00-21:00. Ответим в WhatsApp за 5 минут.</p>
+        <ul class="info">
+          <li><span>Адрес</span>ул. Цветочная, 12</li>
+          <li><span>Телефон</span><a href="tel:+79000000000">+7 900 000-00-00</a></li>
+        </ul>
+        <a class="btn" href="#" data-order="Здравствуйте! Хочу заказать букет">Написать в WhatsApp</a>
+      </div>
+      <img src="img/shop.jpg" alt="Букет в руках" loading="lazy">
+    </div>
+  </section>
+</main>
+
+<footer class="foot wrap">Демо-версия сайта · <a href="https://lestermun.ru">lestermun.ru</a></footer>
+
+<script src="main.js?v=1"></script>
+</body>
+</html>
